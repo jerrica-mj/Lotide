@@ -24,10 +24,7 @@ const eqArrays = function(array1, array2) {
 
 // ACTUAL FUNCTION
 // Function to utilize eqArrays and assertEqual together
-const assertArraysEqual = function(array1, array2, expected) {
-  // Invoke eqArrays to determine whether the arrays are equal
-  const actual = eqArrays(array1, array2);
-
+const assertArraysEqual = function(actual, expected) {
   // Select resulting message based on whether the actual equality matched the expected assertion
   const result = (actual === expected) ? (`✅ Assertion Passed: ${actual} === ${expected}`) : (`❌ Assertion Failed: ${actual} !== ${expected}`);
 
@@ -38,8 +35,13 @@ const assertArraysEqual = function(array1, array2, expected) {
 
 
 // TEST CASES
-// Sample cases for eqArrays function
-assertArraysEqual([1, 2, 3], [1, 2, 3], true); // should pass
-assertArraysEqual([1, 2, 3], [3, 2, 1], false); // should pass
-assertArraysEqual(["1", "2", "3"], ["1", "2", "3"], false); // => should fail
-assertArraysEqual(["1", "2", "3"], ["1", "2", 3], true); // => should fail
+// Sample cases
+console.log(eqArrays([1, 2, 3], [1, 2, 3])); // true
+console.log(eqArrays([1, 2, 3], [3, 2, 1])); // false
+console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"])); // true
+console.log(eqArrays(["1", "2", "3"], ["1", "2", 3])); // false
+
+assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // should pass
+assertArraysEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // should pass
+assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), false); // => should fail
+assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true); // => should fail
