@@ -1,12 +1,14 @@
 // simple array-handling function to reterieve all but the first element of an array (the "tail")
 
 // FUNCTION INITIALIZATION
-// assertEqual function from earlier exercise--to test sample scenarios
+// ASSERTION FUNCTION
 const assertEqual = function(actual, expected) {
   // assign message based on truthy/falsy result
   const message = (actual === expected) ? (`✅ Assertion Passed: ${actual} === ${expected}`) : (`❌ Assertion Failed: ${actual} !== ${expected}`);
   console.log(message); /* log the message */
 };
+
+// ACTUAL FUNCTION
 // tail function to return all but the first item in an array, as a new array
 const tail = function(array) {
   let tail = [...array]; /* clone the array */

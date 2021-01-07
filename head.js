@@ -1,12 +1,15 @@
 // simple array-handling function to reterieve the first element ("head") of an array
 
 // FUNCTION INITIALIZATION
+//  ASSERTION FUNCTION
 // assertEqual function from previous exercise--to be used to test sample scenarios
 const assertEqual = function(actual, expected) {
   // assign message based on truthy/falsy result
   const message = (actual === expected) ? (`✅ Assertion Passed: ${actual} === ${expected}`) : (`❌ Assertion Failed: ${actual} !== ${expected}`);
   console.log(message); /* log the message */
 };
+
+// ACTUAL FUNCTION
 // head function to return first item in an array
 const head = function (array) {
   return array[0];

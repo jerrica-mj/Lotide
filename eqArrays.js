@@ -1,6 +1,7 @@
 // Create a function that can compare two arrays for a perfect match.
 
 // FUNCTION INITIALIZATION
+// ASSERTION FUNCTION
 // Function to verify if result matches expected
 const assertEqual = function(actual, expected) {
   // assign message based on truthy/falsy result
@@ -9,6 +10,8 @@ const assertEqual = function(actual, expected) {
   console.log(message); /* log the message */
 };
 
+
+// ACTUAL FUNCTION
 // Function to compare two arrays for exact match
 const eqArrays = function(array1, array2) {
   // Compare array lengths, returning false (exiting function) if mismatched
@@ -27,6 +30,7 @@ const eqArrays = function(array1, array2) {
   // Return true only if above conditions are passed (matching length and elements)
   return true;
 };
+
 
 
 // TEST CASES

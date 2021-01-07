@@ -3,6 +3,7 @@
 // Function should take in a source array and an itemsToRemove array, then return a new array with only the items not present in the itemsToRemove array
 
 // FUNCTION INITIALIZATION
+// TEST / ASSERTION FUNCTIONS
 // Function to compare two arrays for exact match
 const eqArrays = function(array1, array2) {
   // Compare array lengths, returning false (exiting function) if mismatched
@@ -32,6 +33,8 @@ const assertArraysEqual = function(array1, array2) {
   console.log(result);
 };
 
+
+// ACTUAL FUNCTIONS
 // Function to check if element of an array matches any element in another array
 const compareValueToArray = function(value, array) {
   // Initialize variable to hold comparison result boolean

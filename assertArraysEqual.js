@@ -1,6 +1,7 @@
 // Create a function to assert that two arrays are equal -- combining the efforts of the functions in eqArrays.js
 
 // FUNCTION INITIALIZATION
+// ARRAY COMPARISON FUNCTION
 // Function to compare two arrays for exact match
 const eqArrays = function(array1, array2) {
   // Compare array lengths, returning false (exiting function) if mismatched
@@ -21,6 +22,7 @@ const eqArrays = function(array1, array2) {
 };
 
 
+// ACTUAL FUNCTION
 // Function to utilize eqArrays and assertEqual together
 const assertArraysEqual = function(array1, array2, expected) {
   // Invoke eqArrays to determine whether the arrays are equal
