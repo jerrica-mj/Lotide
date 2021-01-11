@@ -10,11 +10,5 @@ const assertEqual = function(actual, expected) {
   return message; // use return for testing result
 };
 
-// TEST CODE
-// assertEqual("Lighthouse Labs", "Bootcamp"); // fail
-// assertEqual(1, 1); // pass
-// assertEqual("hello", "hello"); // pass
-// assertEqual(3, 6); // fail
-
 // EXPORT MODULE (file) for use in other files/functions
 module.exports = assertEqual;
