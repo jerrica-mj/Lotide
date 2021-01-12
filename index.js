@@ -19,7 +19,7 @@ const takeUntil = require("./takeUntil");
 const without = require("./without");
 
 module.exports = {
-  // object shorthand:
+  // object property value shorthand:
   // if key and value share same name, can simply write once
   head,
   tail,
