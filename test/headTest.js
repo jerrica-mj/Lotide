@@ -1,9 +1,30 @@
 const head = require("../head");
-const assertEqual = require("../assertEqual");
+// const assertEqual = require("../assertEqual");
+const assert = require("chai").assert; // replaces our assertEqual for mocha/chai testing
 
-// TEST CODE WITH SAMPLE/TEST ASSERTIONS
-// console.log(head([5,6,7])) // 5;
-assertEqual(head([5,6,7]), 5); // pass
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello"); //pass
-assertEqual(head(['alone']), 'alone'); // pass
-assertEqual(head([]), undefined); // pass
+// TEST CODE WITH MOCHA AND CHAI
+describe("#head", () => {
+  it("returns 1 for [1, 2, 3]", () => {
+    assert.strictEqual(head([1, 2, 3]), 1);
+  });
+
+  it("returns '5' for ['5']", () => {
+    assert.strictEqual(head(['5']), '5');
+  });
+
+  it("returns 5 for [5, 6, 7]", () => {
+    assert.strictEqual(head([5,6,7]), 5);
+  });
+
+  it("returns 'Hello' for ['Hello', 'Lighthouse', 'Labs']", () => {
+    assert.strictEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+  });
+
+  it("returns 'alone' for ['alone']", () => {
+    assert.strictEqual(head(['alone']), 'alone');
+  });
+
+  it("returns undefined for []", () => {
+    assert.strictEqual(head([]), undefined);
+  });
+});

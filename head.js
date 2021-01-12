@@ -1,7 +1,3 @@
-// REQUIRE OUTSIDE MODULE/FILE FUNCTION(S)
-// const assertEqual = require("./assertEqual");
-
-
 // Simple array-handling function to reterieve the first element ("head") of an array
 
 // FUNCTION INITIALIZATION
