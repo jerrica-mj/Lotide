@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@jerrica-mj/lotide",
   "version": "1.0.0",
-  "description": "Lotide library from Lighthouse Labs W1-W2 project work.",
+  "description": "a mini clone of the Lodash library; completed as part of Lighthouse Labs course work.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -15,10 +15,11 @@
   },
   "keywords": [
     "lotide",
-    "lighthouseLabs",
-    "library"
+    "lodash-mini-clone",
+    "learning",
+    "lighthouse-Labs"
   ],
-  "author": "JJ",
+  "author": "Jerrica J",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jerrica-mj/lotide/issues"
