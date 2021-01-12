@@ -25,25 +25,28 @@ const findKeyByValue = function(object, value) {
 
 
 
-// TEST CODE
-// Sample case 1
-const bestTVShowsByGenre = {
-  sci_fi: "The Expanse",
-  comedy: "Brooklyn Nine-Nine",
-  drama:  "The Wire"
-};
+// // TEST CODE
+// // Sample case 1
+// const bestTVShowsByGenre = {
+//   sci_fi: "The Expanse",
+//   comedy: "Brooklyn Nine-Nine",
+//   drama:  "The Wire"
+// };
 
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
 
-// Sample case 2
-const numbers = {
-  first: [9, 7, 6],
-  second: [2, 4, 3 ,7],
-  third: [3, 1, 8],
-  fourth: [4]
-};
+// // Sample case 2
+// const numbers = {
+//   first: [9, 7, 6],
+//   second: [2, 4, 3 ,7],
+//   third: [3, 1, 8],
+//   fourth: [4]
+// };
 
-assertEqual(findKeyByValue(numbers, 1), "third");
-assertEqual(findKeyByValue(numbers, 5), undefined);
-assertEqual(findKeyByValue(numbers, 4), "second");
+// assertEqual(findKeyByValue(numbers, 1), "third");
+// assertEqual(findKeyByValue(numbers, 5), undefined);
+// assertEqual(findKeyByValue(numbers, 4), "second");
+
+
+module.exports = findKeyByValue;

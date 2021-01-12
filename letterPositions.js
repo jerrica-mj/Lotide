@@ -33,7 +33,7 @@ const assertArraysEqual = function(array1, array2) {
 // Function to return all the indices at which each letter is found in a string--return an object of arrays (of index values)
 const letterPositions = function(sentence) {
   const results = {}; // Empty object for return
-  
+
   // For each unique letter in the sentence, create a key--loop through the sentence
   // --use .split("") to turn the string into an array of the characters
   sentence.split("").forEach((letter, index) => {
@@ -51,26 +51,29 @@ const letterPositions = function(sentence) {
 };
 
 
-// TEST CODE
-// Test case "lighthouse in the house"
-console.log(letterPositions("lighthouse in the house"));
-/* Expected output:
-{
-  l: [0],
-  i: [1, 11],
-  g: [2],
-  h: [3, 5, 15, 18],
-  t: [4, 14],
-  o: [6, 19],
-  u: [7, 20],
-  s: [8, 21],
-  e: [9, 16, 22],
-  n: [12]
-} */
+// // TEST CODE
+// // Test case "lighthouse in the house"
+// console.log(letterPositions("lighthouse in the house"));
+// /* Expected output:
+// {
+//   l: [0],
+//   i: [1, 11],
+//   g: [2],
+//   h: [3, 5, 15, 18],
+//   t: [4, 14],
+//   o: [6, 19],
+//   u: [7, 20],
+//   s: [8, 21],
+//   e: [9, 16, 22],
+//   n: [12]
+// } */
 
-// Use assertArraysEqual and eqArrays to compare a string's letters and their expected positions
-// Test case using "hello"
-assertArraysEqual(letterPositions("hello").h, [0]); // pass
-assertArraysEqual(letterPositions("hello").e, [1]); // pass
-assertArraysEqual(letterPositions("hello").l, [2,3]); // pass
-assertArraysEqual(letterPositions("hello").o, [4]); // pass
+// // Use assertArraysEqual and eqArrays to compare a string's letters and their expected positions
+// // Test case using "hello"
+// assertArraysEqual(letterPositions("hello").h, [0]); // pass
+// assertArraysEqual(letterPositions("hello").e, [1]); // pass
+// assertArraysEqual(letterPositions("hello").l, [2,3]); // pass
+// assertArraysEqual(letterPositions("hello").o, [4]); // pass
+
+
+module.exports = letterPositions;

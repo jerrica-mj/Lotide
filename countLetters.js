@@ -14,7 +14,7 @@ const assertEqual = function(actual, expected) {
 // Function to receive a string and return a count of each letter in the string
 const countLetters = function(string) {
   let results = {}; // Initialize an object to be returned
-  
+
   // Loop through the string
   for (let letter of string) {
     // Count the unique letters--skip spaces (" ") (falsey value?)
@@ -30,17 +30,19 @@ const countLetters = function(string) {
   return results; // Return the object of the letter counts
 }
 
-// TEST CODE
-countLetters("lighthouse in the house"); 
-/* Expected output: {
-  l: 1,
-  i: 2,
-  g: 1,
-  h: 4,
-  t: 2,
-  o: 2,
-  u: 2,
-  s: 2,
-  e: 3,
-  n: 1,
-} */
+// // TEST CODE
+// countLetters("lighthouse in the house");
+// /* Expected output: {
+//   l: 1,
+//   i: 2,
+//   g: 1,
+//   h: 4,
+//   t: 2,
+//   o: 2,
+//   u: 2,
+//   s: 2,
+//   e: 3,
+//   n: 1,
+// } */
+
+module.exports = countLetters;

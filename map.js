@@ -26,7 +26,7 @@ const assertArraysEqual = function(array1, array2) {
 // ACTUAL FUNCTION
 const map = function(array, callback) {
   const result = [];
-  
+
   for (let item of array) {
     result.push(callback(item));
   }
@@ -35,17 +35,20 @@ const map = function(array, callback) {
 };
 
 
-// TEST CODE
-const words = ["ground", "control", "to", "major", "tom"];
+// // TEST CODE
+// const words = ["ground", "control", "to", "major", "tom"];
 
-const mapWords1 = map(words, word => word[0]);
-// console.log(mapWords1); // Expected output: ["g", "c", "t", "m", "t"]
-assertArraysEqual(mapWords1, ["g", "c", "t", "m", "t"]); // should pass
+// const mapWords1 = map(words, word => word[0]);
+// // console.log(mapWords1); // Expected output: ["g", "c", "t", "m", "t"]
+// assertArraysEqual(mapWords1, ["g", "c", "t", "m", "t"]); // should pass
 
-const mapWords2 = map(words, word => word + "s");
-// console.log(mapWords2); // Expected: ["grounds", "controls", "tos", "majors", "toms"]
-assertArraysEqual(mapWords2, ["grounds", "controls", "tos", "majors", "toms"]); // should pass
+// const mapWords2 = map(words, word => word + "s");
+// // console.log(mapWords2); // Expected: ["grounds", "controls", "tos", "majors", "toms"]
+// assertArraysEqual(mapWords2, ["grounds", "controls", "tos", "majors", "toms"]); // should pass
 
-const mapWords3 = map(words, word => word.length);
-// console.log(mapWords3); // Expected: [6, 7, 2, 5, 3]
-assertArraysEqual(mapWords3, [6, 7, 2, 5, 3]); // should pass
+// const mapWords3 = map(words, word => word.length);
+// // console.log(mapWords3); // Expected: [6, 7, 2, 5, 3]
+// assertArraysEqual(mapWords3, [6, 7, 2, 5, 3]); // should pass
+
+
+module.exports = map;

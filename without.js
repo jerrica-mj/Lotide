@@ -68,7 +68,7 @@ const without = function(source, itemsToRemove) {
       newArr.push(element);
     }
   });
-  
+
   // Log newArr with elements removed as needed
   console.log(newArr);
   // return newArr;
@@ -76,13 +76,16 @@ const without = function(source, itemsToRemove) {
 
 
 
-// TEST CASES
-// Sample cases
-without([1, 2, 3], [1]); // => [2, 3]
-without(["1", "2", "3"], [1, 2, "3"]); // => ["1", "2"]
+// // TEST CASES
+// // Sample cases
+// without([1, 2, 3], [1]); // => [2, 3]
+// without(["1", "2", "3"], [1, 2, "3"]); // => ["1", "2"]
+//
+// // Test case to check that source array is unchanged
+// const words = ["hello", "world", "lighthouse"];
+// without(words, ["lighthouse"]); // no need to capture return value for this test case
+// // Make sure the original array was not altered by the without function
+// assertArraysEqual(words, ["hello", "world", "lighthouse"]); // should pass
 
-// Test case to check that source array is unchanged
-const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]); // no need to capture return value for this test case
-// Make sure the original array was not altered by the without function
-assertArraysEqual(words, ["hello", "world", "lighthouse"]); // should pass
+
+module.exports = without;

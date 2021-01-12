@@ -24,7 +24,7 @@ const eqArrays = function(array1, array2) {
   // Return true only if above conditions are passed (matching length and elements)
   return true;
 };
- 
+
 
 
 // ACTUAL FUNCTION
@@ -45,7 +45,7 @@ const eqObjects = function(obj1, obj2) {
   // Check that each key in both objects have same value
   // Loop through each key of obj1
   for (const key in obj1) {
-    
+
     // Check if key value is identical in both objects--primitive values only
     if (obj1[key] !== obj2[key]) {
       // If key values are arrays, use eqArrays function, since === only works for primitive data types
@@ -65,23 +65,26 @@ const eqObjects = function(obj1, obj2) {
 
 
 
-// TEST CODE
-// PRIMITIVE VALUES ONLY
-const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
-// eqObjects(ab, ba); // => true
-assertEqual(eqObjects(ab, ba), true); // pass
+// // TEST CODE
+// // PRIMITIVE VALUES ONLY
+// const ab = { a: "1", b: "2" };
+// const ba = { b: "2", a: "1" };
+// // eqObjects(ab, ba); // => true
+// assertEqual(eqObjects(ab, ba), true); // pass
 
-const abc = { a: "1", b: "2", c: "3" };
-// eqObjects(ab, abc); // => false
-assertEqual(eqObjects(ab, abc), false); // pass
+// const abc = { a: "1", b: "2", c: "3" };
+// // eqObjects(ab, abc); // => false
+// assertEqual(eqObjects(ab, abc), false); // pass
 
-// ARRAY VALUES
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-// eqObjects(cd, dc); // => true
-assertEqual(eqObjects(cd, dc), true); // pass
+// // ARRAY VALUES
+// const cd = { c: "1", d: ["2", 3] };
+// const dc = { d: ["2", 3], c: "1" };
+// // eqObjects(cd, dc); // => true
+// assertEqual(eqObjects(cd, dc), true); // pass
 
-const cd2 = { c: "1", d: ["2", 3, 4] };
-// eqObjects(cd, cd2); // => false
-assertEqual(eqObjects(cd, cd2), false); // pass
+// const cd2 = { c: "1", d: ["2", 3, 4] };
+// // eqObjects(cd, cd2); // => false
+// assertEqual(eqObjects(cd, cd2), false); // pass
+
+
+module.exports = eqArrays;
